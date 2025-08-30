@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      
+      background: #f2f2f2;
+      color: black;
+      background: url('img2.jpg');
+      background-size: cover;
+
+    }
+    header {
+      
+      padding: 10px 0;
+      font-style: italic;
+      text-align: center;
+      
+      
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 10px;
+    }
+    nav a {
+      color:gray;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .home {
+      text-align: center;
+      font-style: italic;
+    }
+    .home h1 {
+      font-size: 3em;
+      color: #0e5e8d;
+    }
+    .home p {
+      font-size: 1.2em;
+      color: #555;
+      margin-top: 10px;
+      
+    }
+    .btn {
+      background: #0077ff8f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      margin-top: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #095b92be;
+      
+    }
+    .skills ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .skills li {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #056c74;
+      font-style: italic;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 2px 2px 10px rgba(156, 49, 6, 0.05);
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      font-size: 1em;
+      font-style: italic;
+    }
+    footer {
+      background: #0e5e8d;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    #about{
+        font-size: medium;
+        font-style: italic;
+
+    }
+    
+    #project{
+      color: white;
+      font-style: italic;
+    }
+    
+    #contact{
+      color:white;
+    }
+    nav a:hover {
+    color: black;
+    }
+    </style>
+</head>
+<body>
+
+  <header>
+    <h1>AYESHA</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#project">project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I’m a web developer passionate about building responsive and engaging websites.</p>
+    <a href="https://onedrive.live.com/?viewid=456f46cd%2D398d%2D48e1%2Daf01%2Debde606dc55f&id=%2Fpersonal%2F4d764fa1265f8c04%2FDocuments%2FAyesha%20CV%2Epdf&parent=%2Fpersonal%2F4d764fa1265f8c04%2FDocuments" class="btn" download>Download Resume</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m a Computer Science student with a passion for web development and programming.
+        I have complted my degree in MCA at Mohamed Sathak Engineering College.
+        I enjoy learning new technologies and building simple, creative websites.
+        My goal is to become a full-stack developer and work on impactful software projects.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5 & CSS3</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>React</li>
+      <li>Django</li>
+      <li>sql</li>
+      <li>MongoDB</li>
+      <li>Git & GitHub</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+  <section id="project" class="project">
+    <h1>My Project</h1>
+    <p>This is a simple web app built using HTML, CSS, and JavaScript</p> 
+      <p>To showcase my front-end skills.
+    </p>
+    <a href="https://aishaa.neocities.org/event/event" class="btn" download>View My Project</a>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="ayeshajahubarali03@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 Ayesha . All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
